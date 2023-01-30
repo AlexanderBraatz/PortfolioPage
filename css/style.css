@@ -24,7 +24,7 @@ html {
 	--main-gray: #303841;
 }
 body {
-	background: var(--d-green);
+	background: rgb(255, 255, 255);
 }
 
 /* NAVBAR-------- */
@@ -32,11 +32,13 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	height: 8rem;
-	background: var(--main-red);
+	height: 6rem;
+	/* background: var(--main-red); */
+	background-color: rgb(255, 255, 255);
 	z-index: 2;
 	display: flex;
 	justify-content: flex-end;
+	box-shadow: 0 0.1rem 0.3rem #333;
 }
 
 .nav-list {
@@ -46,6 +48,7 @@ body {
 	list-style: none;
 	height: 100%;
 	width: 40vw;
+	background-color: rgb(255, 255, 255);
 }
 
 .nav-item {
@@ -53,11 +56,12 @@ body {
 	align-items: center;
 	height: 100%;
 	width: 100%;
+	z-index: 2;
 }
 
 .nav-link {
 	text-decoration: none;
-	color: var(--main-white);
+	color: #303841;
 	font-size: 2.5rem;
 	height: 100%;
 	width: 100%;
@@ -67,32 +71,55 @@ body {
 }
 
 .nav-link:hover {
-	background-color: #303841;
+	font-size: 2.7em;
+	color: #303841;
 	transition: 0.1s;
+	background-color: var(--main-white);
 }
 
 /* HERO-------- */
 #welcome-section {
-	margin-top: 60px;
+	/* margin-top: 8rem; */
 	background: var(--l-green);
-	/* height: calc(100vh - 60px); */
+	height: 100vh;
 	text-align: center;
 	padding-top: 35vh;
+	background: radial-gradient(
+		circle at 100%,
+		#333,
+		#333 50%,
+		#eee 75%,
+		#333 75%
+	);
 }
 #welcome-section h1 {
-	font-size: 3.5rem;
+	font-size: 10rem;
 	font-weight: bold;
 	padding: 0 20px;
+	background-color: #f3ec78;
+	background-image: linear-gradient(90deg, #333 35%, #eee 45%, #eee);
+	background-clip: text;
+	color: transparent;
 	/* background: red; */
+}
+.hey {
+	font-size: inherit;
+	color: #333;
 }
 /* can i make the h1 arch?  */
 
 #welcome-section p {
-	font-size: 1.5rem;
+	font-size: 5rem;
 	font-style: italic;
-	padding: 0 20px;
+	padding: 0 20px 0 400px;
+
 	position: relative;
-	top: -20px;
+	top: -60px;
+	background-color: #f3ec78;
+	background-image: linear-gradient(90deg, #333 40%, #eee 70%);
+	background-clip: text;
+	color: transparent;
+	/* background-color: red; */
 }
 
 /* PROJECTS -------- */
