@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Poppins, sans-serif;
+	font-size: 16;
+
+	--ex-l-green: rgb(30, 252, 30);
+	--l-green: rgb(20, 153, 17);
+	--green: rgb(37, 109, 27);
+	--d-green: rgb(36, 79, 38);
+	--gray: rgb(66, 67, 66);
+	--purply-magenta: #631b6d; /*complementary to green */
+	--magenta: #961199; /*complementary to  l-green */
+}
+body {
+	background: var(--d-green);
+}
+
+/* NAVBAR-------- */
+header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 60px;
+	background: var(--ex-l-green);
+	z-index: 99;
+}
+
+.nav-links {
+	width: 40vw;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	float: right;
+	list-style: none;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: var(--gray);
+	font-weight: bold;
+}
+
+/* HERO-------- */
+#welcome-section {
+	margin-top: 60px;
+	background: var(--l-green);
+	/* height: calc(100vh - 60px); */
+	text-align: center;
+	padding-top: 35vh;
+}
+#welcome-section h1 {
+	font-size: 3.5rem;
+	font-weight: bold;
+	padding: 0 20px;
+	/* background: red; */
+}
+/* can i make the h1 arch?  */
+
+#welcome-section p {
+	font-size: 1.5rem;
+	font-style: italic;
+	padding: 0 20px;
+	position: relative;
+	top: -20px;
+}
+
+/* PROJECTS -------- */
+
+#projects {
+	margin: 60px auto;
+	/* width: 100%; */
+	max-width: 1300px;
+	background-color: red;
+	padding: 0 2rem;
+}
+
+#projects-heading {
+	/* font-size: 2rem;
+  text-align: center;
+  border-bottom: 0.1rem solid ;
+  /* width: 100%; */
+	max-width: 560px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 0 30px;
+}
+
+.xprojects-container {
+	/* margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1200px; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4rem;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 6rem;
+}
+
+.projects-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4rem;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.project-tile {
+	background-color: green;
+	display: block;
+	text-align: center;
+	/* height: ; */
+}
+.project-tile-image {
+	height: calc(100% - 3rem);
+	width: 100%;
+	object-fit: cover;
+}
+.project-tile-title {
+	font-size: 1.1rem;
+	height: 3rem;
+	padding: 1rem;
+}
