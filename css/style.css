@@ -4,11 +4,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-size: 10px;
 }
 
 html {
 	font-family: Poppins, sans-serif;
-	font-size: 16;
 
 	--ex-l-green: rgb(30, 252, 30);
 	--l-green: rgb(20, 153, 17);
@@ -17,35 +17,58 @@ html {
 	--gray: rgb(66, 67, 66);
 	--purply-magenta: #631b6d; /*complementary to green */
 	--magenta: #961199; /*complementary to  l-green */
+
+	--main-white: #f0f0f0;
+	--main-red: #be3144;
+	--main-blue: #45567d;
+	--main-gray: #303841;
 }
 body {
 	background: var(--d-green);
 }
 
 /* NAVBAR-------- */
-header {
+.navbar {
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	height: 60px;
-	background: var(--ex-l-green);
-	z-index: 99;
+	height: 8rem;
+	background: var(--main-red);
+	z-index: 2;
+	display: flex;
+	justify-content: flex-end;
 }
 
-.nav-links {
-	width: 40vw;
-	height: 100%;
+.nav-list {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	float: right;
 	list-style: none;
+	height: 100%;
+	width: 40vw;
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
 .nav-link {
 	text-decoration: none;
-	color: var(--gray);
-	font-weight: bold;
+	color: var(--main-white);
+	font-size: 2.5rem;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-link:hover {
+	background-color: #303841;
+	transition: 0.1s;
 }
 
 /* HERO-------- */
