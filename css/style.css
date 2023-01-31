@@ -25,7 +25,7 @@ html {
 	--background-1: var(--main-red);
 }
 body {
-	background: var(--background-1);
+	background: var(--main-white);
 }
 
 /* NAVBAR-------- */
@@ -80,7 +80,6 @@ body {
 
 /* HERO-------- */
 #welcome-section {
-	background: var(--l-green);
 	height: 100vh;
 	text-align: center;
 	padding-top: 35vh;
@@ -125,8 +124,10 @@ body {
 }
 
 /* PROJECTS -------- */
-
 #projects {
+	background-color: var(--background-1);
+}
+.projects-container {
 	margin: 0rem auto;
 	max-width: 1300px;
 	background-color: red;
@@ -147,7 +148,7 @@ body {
 	border-bottom: 0.2rem solid#333;
 }
 
-.projects-container {
+.projects-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 	grid-gap: 6rem;
@@ -302,3 +303,38 @@ body {
 }
 
 /* FOOTER -------- */
+footer {
+	background-color: var(--main-red);
+	text-align: center;
+	padding-top: 0.5rem;
+}
+.footer-container {
+	background-color: #333;
+	height: 8rem;
+	padding: 2rem 10rem;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	font-size: 2rem;
+	color: #eee;
+}
+#footer-credit {
+	height: 4rem;
+	/* background-color: blue; */
+	font-size: inherit;
+
+	margin: 0rem 2rem 2rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer-date {
+	height: 4rem;
+	/* background-color: lightblue; */
+	font-size: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0rem 2rem 2rem 2rem;
+}
