@@ -250,3 +250,55 @@ body {
 	background-color: rgb(100, 100, 100);
 	transition: 0.3s;
 }
+
+/* CANTACT ME -------- */
+#contact-me {
+	background-color: gray;
+	height: calc(100vh - 6rem);
+
+	padding-top: 20vh;
+	background: radial-gradient(circle at 0%, #333, #333 50%, #eee 50%, #333 75%);
+}
+
+.contact-me-container {
+	text-align: left;
+	padding-left: 2rem;
+	width: 50vw;
+	color: #f0f0f0;
+}
+#contact-me h2 {
+	font-size: 6rem;
+	line-height: 8rem;
+	margin-bottom: 3rem;
+}
+#contact-me p {
+	font-size: 3rem;
+	margin-bottom: 5rem;
+}
+#contact-links {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+/* #contact-links li {
+
+} */
+.contact-link {
+	font-size: 2rem;
+	padding: 0 5rem 0 0;
+	color: #f0f0f0;
+	text-decoration: none;
+	position: relative;
+	top: 0rem;
+	transition-duration: 0.5s;
+}
+
+.contact-link:hover {
+	top: -1rem;
+}
+
+/* FOOTER -------- */
