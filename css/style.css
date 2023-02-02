@@ -4,12 +4,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-size: 10px;
 }
 
 html {
 	font-family: Poppins, sans-serif;
-
+	font-size: 10px;
 	--ex-l-green: rgb(30, 252, 30);
 	--l-green: rgb(20, 153, 17);
 	--green: rgb(37, 109, 27);
@@ -50,6 +49,7 @@ body {
 	height: 100%;
 	width: 40vw;
 	background-color: rgb(255, 255, 255);
+	padding-right: 1rem;
 }
 
 .nav-item {
@@ -91,6 +91,7 @@ body {
 		#333 75%
 	);
 	color: transparent;
+	transition: 2s;
 }
 #welcome-section:hover {
 	color: var(--main-red);
@@ -113,10 +114,9 @@ body {
 #welcome-section p {
 	font-size: 5rem;
 	font-style: italic;
-	padding: 0 8rem 0 42rem;
+	padding: 1rem 8rem 0 42rem;
 
 	position: relative;
-	top: -6rem;
 	background-color: #f3ec78;
 	background-image: linear-gradient(90deg, #333 40%, #eee 70%);
 	background-clip: text;
@@ -129,7 +129,7 @@ body {
 }
 .projects-container {
 	margin: 0rem auto;
-	max-width: 1300px;
+	max-width: 130rem;
 	background-color: red;
 	background-color: var(--background-1);
 	padding: 0.1rem 2rem;
@@ -141,7 +141,7 @@ body {
 	text-align: center;
 	margin: 0rem auto;
 	font-size: 4rem;
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 	padding: 10rem 5rem 6rem 5rem;
 	background-color: #f3ec78;
 	background-color: var(--background-1);
@@ -153,7 +153,7 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 	grid-gap: 6rem;
 	width: 100%;
-	max-width: 1280px;
+	max-width: 128rem;
 	margin: 0 auto;
 	background-color: #961199;
 	background-color: var(--background-1);
@@ -225,7 +225,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 10px;
+	border-radius: 2rem;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 1rem #23090d;
 	--arrow-move: 0rem;
@@ -257,7 +257,7 @@ body {
 	background-color: gray;
 	height: calc(100vh - 6rem);
 
-	padding-top: 20vh;
+	padding-top: 35vh;
 	background: radial-gradient(circle at 0%, #333, #333 50%, #eee 50%, #333 75%);
 }
 
@@ -337,4 +337,46 @@ footer {
 	justify-content: center;
 	align-items: center;
 	margin: 0rem 2rem 2rem 2rem;
+}
+
+@media screen and (max-width: 576px) {
+	html {
+		font-size: 5px;
+	}
+	.nav-list {
+		width: 100%;
+	}
+	#welcome-section {
+		background: radial-gradient(
+			circle at 100%,
+			#333,
+			#333 45%,
+			#eee 75%,
+			#333 75%
+		);
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 688px) {
+	html {
+		font-size: 6px;
+	}
+}
+
+@media screen and (min-width: 688px) and (max-width: 860px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media screen and (min-width: 860px) and (max-width: 1200px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	html {
+		font-size: 10px;
+	}
 }
