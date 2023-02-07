@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* transition: none !important; */
 }
 
 html {
@@ -26,6 +27,9 @@ html {
 body {
 	background: var(--main-white);
 }
+/* .no-transition {
+	transition: none !important;
+} */
 
 /* NAVBAR-------- */
 .navbar {
@@ -73,13 +77,12 @@ body {
 
 .nav-link:hover {
 	font-size: 2.7em;
-	color: #303841;
-	transition: 0.1s;
+	transition: font-size 0.1s, background-color 0.1s;
 	background-color: var(--main-white);
 }
 
 /* HERO-------- */
-#welcome-section {
+.welcome-section {
 	height: 100vh;
 	text-align: center;
 	padding-top: 35vh;
@@ -91,27 +94,29 @@ body {
 		#333 75%
 	);
 	color: transparent;
-	transition: 2s;
+	transition: color 30s;
+	/* transition: none !important; */
 }
-#welcome-section:hover {
+.welcome-section:hover {
 	color: var(--main-red);
-	transition: 5s;
+	transition: color 5s;
 }
-#welcome-section h1 {
-	font-size: 10rem;
+.welcome-section h1 {
+	font-size: 11rem;
 	font-weight: bold;
 	padding: 0 2rem;
 	background-color: #f3ec78;
 	background-image: linear-gradient(90deg, #333 35%, #eee 45%, #eee);
 	background-clip: text;
 	color: inherit;
+	transition: none;
 }
 .hey {
 	font-size: inherit;
 	color: #333;
 }
 
-#welcome-section p {
+.welcome-section p {
 	font-size: 5rem;
 	font-style: italic;
 	padding: 1rem 8rem 0 42rem;
@@ -187,7 +192,7 @@ body {
 
 .project-tile-title span {
 	color: var(--span-color);
-	transition: 0.5s;
+	transition: color 0.5s;
 	font-size: inherit;
 }
 .project-tile:hover {
@@ -247,9 +252,9 @@ body {
 }
 
 #profile-link:hover {
-	--arrow-move: 1rem;
+	/* --arrow-move: 1rem; */
 	background-color: rgb(100, 100, 100);
-	transition: 0.3s;
+	transition: background-color 0.3s;
 }
 
 /* CANTACT ME -------- */
@@ -295,7 +300,7 @@ body {
 	text-decoration: none;
 	position: relative;
 	top: 0rem;
-	transition-duration: 0.5s;
+	transition: top 0.5s;
 }
 
 .contact-link:hover {
